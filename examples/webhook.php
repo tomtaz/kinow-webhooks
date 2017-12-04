@@ -13,7 +13,7 @@ if ($webhookSignature == $expectedSignature) {
     $payload = json_decode($body, true);
 
     // Retrieve these data
-    $enventId = $payload['event_id'];
+    $eventId = $payload['event_id'];
     $subject = $payload['subject'];
     $data = $payload['data'];
 
