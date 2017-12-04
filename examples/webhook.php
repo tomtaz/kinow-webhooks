@@ -1,14 +1,14 @@
 <?php
 
-$app_secret = 'YOUR-SECRET-KEY-HERE';
+$appSecret = getenv('YOUR-SECRET-KEY-HERE');
 
-$webhook_signature = getallheaders()["X-Kinow-Signature"];
+$webhookSignature = getallheaders()["X-Kinow-Signature"];
 
 $body = file_get_contents('php://input');
 
-$expected_signature = hash_hmac('sha256', $body, $app_secret, false);
+$expectedSignature = hash_hmac('sha256', $body, $appSecret, false);
 
-if ($webhook_signature == $expected_signature) {
+if ($webhookSignature == $expectedSignature) {
 
     $payload = json_decode($body, true);
 
