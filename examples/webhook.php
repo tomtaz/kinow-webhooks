@@ -12,9 +12,12 @@ if ($webhook_signature == $expected_signature) {
 
     $payload = json_decode($body, true);
 
+    // Retrieve these data
     $enventId = $payload['event_id'];
     $subject = $payload['subject'];
     $data = $payload['data'];
+
+    // Do something here...
 
     header("Status: 200 OK");
 } else {
