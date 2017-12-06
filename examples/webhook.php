@@ -1,6 +1,9 @@
 <?php
 
-$appSecret = getenv('YOUR-SECRET-KEY-HERE');
+$appSecret = 'YOUR-SECRET-KEY-HERE';
+
+// OR you can use environment variables
+$appSecret = getenv('KINOW_WEBHOOK_SECRET');
 
 $webhookSignature = getallheaders()["X-Kinow-Signature"];
 
