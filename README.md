@@ -56,4 +56,4 @@ Data row contains linked order object (key "order") and linked customer object (
 - **update**: customer_updated
 - **delete**: customer_deleted
 
-Data row contains inked customer object (key "customer").
+Data row contains linked customer object (key "customer").
