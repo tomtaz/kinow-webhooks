@@ -25,7 +25,7 @@ Implement webhook with Kinow Solution.
 
 - **create**: product_created
 - **update**: product_updated
-- **delete**: product_delete
+- **delete**: product_deleted
 
 Data row contains the linked product object (key "product").
 
@@ -33,8 +33,9 @@ Data row contains the linked product object (key "product").
 
 - **update**: access_created
 - **update**: access_updated
+- **delete**: access_deleted
 
-Data row contains the linked access object (key "access") and linked customer object (key "customer").
+Data row contains the linked access object (key "access"), the linked product object (key "product") and the linked customer object (key "customer").
 
 ### Subscription access
 
@@ -43,7 +44,7 @@ Data row contains the linked access object (key "access") and linked customer ob
 - **stop**: subscription_stopped
 - **renew failed**: subscription_error
 
-Data row contains linked subscription object (key "subscription") and linked customer object (key "customer").
+Data row contains the linked subscription object (key "subscription") and the linked customer object (key "customer").
 
 For **subscription_error** event, we also provide a key "payment_method" with the payment name.
 
@@ -53,7 +54,7 @@ For **subscription_stopped** event, we also provide the linked access object (ke
 
 - **create**: order_created
 
-Data row contains linked order object (key "order") and linked customer object (key "customer").
+Data row contains the linked order object (key "order") and the linked customer object (key "customer").
 
 ### Users
 
@@ -61,4 +62,4 @@ Data row contains linked order object (key "order") and linked customer object (
 - **update**: customer_updated
 - **delete**: customer_deleted
 
-Data row contains linked customer object (key "customer").
+Data row contains the linked customer object (key "customer").
