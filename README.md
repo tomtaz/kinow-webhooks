@@ -31,6 +31,7 @@ Data row contains the linked product object (key "product").
 
 ### Access
 
+- **update**: access_created
 - **update**: access_updated
 
 Data row contains the linked access object (key "access") and linked customer object (key "customer").
@@ -42,7 +43,9 @@ Data row contains the linked access object (key "access") and linked customer ob
 - **stop**: subscription_stopped
 - **renew failed**: subscription_error
 
-Data row contains linked subscription object (key "subscription") and linked customer object (key "customer"). 
+Data row contains linked subscription object (key "subscription") and linked customer object (key "customer").
+For **subscription_error** event, we also provide a key "payment_method" with the payment name.
+For **subscription_stopped** event, we also provide the linked access object (key "access").
 
 ### Orders
 
