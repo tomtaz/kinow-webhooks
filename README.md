@@ -50,13 +50,13 @@ For **subscription_error** event, we also provide a key "payment_method" with th
 
 For **subscription_stopped** event, we also provide the linked access object (key "access").
 
-### Orders
+### Order
 
 - **create**: order_created
 
 Data row contains the linked order object (key "order") and the linked customer object (key "customer").
 
-### Users
+### Customer
 
 - **create**: customer_created
 - **update**: customer_updated
