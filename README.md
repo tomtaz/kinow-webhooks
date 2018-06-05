@@ -62,4 +62,35 @@ Data row contains the linked order object (key "order") and the linked customer 
 - **update**: customer_updated
 - **delete**: customer_deleted
 
-Data row contains the linked customer object (key "customer").
+### Categories
+
+- **create**: category_created
+- **update**: category_updated
+- **delete**: category_deleted
+
+Data row contains the linked product object (key "category").
+
+### Actors
+
+- **create**: actor_created
+- **update**: actor_updated
+- **delete**: actor_deleted
+
+Data row contains the linked product object (key "supplier").
+
+
+### Directors
+
+- **create**: director_created
+- **update**: director_updated
+- **delete**: director_deleted
+
+Data row contains the linked customer object (key "manufacturer").
+
+### Directors
+
+- **create**: video_created
+- **update**: video_updated
+- **delete**: video_deleted
+
+Data row contains the linked customer object (key "video").
