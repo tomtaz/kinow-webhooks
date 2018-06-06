@@ -62,6 +62,8 @@ Data row contains the linked order object (key "order") and the linked customer 
 - **update**: customer_updated
 - **delete**: customer_deleted
 
+-Data row contains the linked customer object (key "customer").
+
 ### Category
 
 - **create**: category_created
