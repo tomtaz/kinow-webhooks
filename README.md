@@ -102,22 +102,23 @@ Data row contains the linked video object (key "video").
 - **update**: cmspage_updated
 - **delete**: cmspage_deleted
 
-Data row contains the linked video object (key "cmspage").
+Data row contains the linked cms object (key "cmspage").
 
 ### CMS Category
 - **create**: cmscategory_created
 - **update**: cmscategory_updated
 - **delete**: cmscategory_deleted
 
-Data row contains the linked video object (key "cmscategory").
+Data row contains the linked cms category object (key "cmscategory").
 
-### CMS Category
+### Currency
 - **update**: currency_updated
+- **update all currencies**: currencies_updated
 
-Data row contains the linked video object (key "currency").
+Data row contains the linked currency object only for currency_update (key "currency").
 
 ### Group
 - **Add customer to group**: add_customer_group
 - **Remove customer from group**: delete_customer_group
 
-Data row contains the linked video object (key "currency").
+Data row contains the linked custerom and customer groups objects (keys "customer" and "customer_groups").
