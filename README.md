@@ -96,3 +96,28 @@ Data row contains the linked director object (key "director").
 - **delete**: video_deleted
 
 Data row contains the linked video object (key "video").
+
+### CMS
+- **create**: cmspage_created
+- **update**: cmspage_updated
+- **delete**: cmspage_deleted
+
+Data row contains the linked video object (key "cmspage").
+
+### CMS Category
+- **create**: cmscategory_created
+- **update**: cmscategory_updated
+- **delete**: cmscategory_deleted
+
+Data row contains the linked video object (key "cmscategory").
+
+### CMS Category
+- **update**: currency_updated
+
+Data row contains the linked video object (key "currency").
+
+### Group
+- **Add customer to group**: add_customer_group
+- **Remove customer from group**: delete_customer_group
+
+Data row contains the linked video object (key "currency").
