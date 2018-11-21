@@ -121,4 +121,4 @@ Data row contains the linked currency object only for currency_update (key "curr
 - **Attach customer to group**: group_customer_attached
 - **Remove customer from group**: group_customer_removed
 
-Data row contains the linked customer object (key "customer") and customer groups objects  (key "customer_groups").
+Data row contains the linked customer object (key "customer") and customer groups objects  (key "groups").
