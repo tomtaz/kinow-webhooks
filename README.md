@@ -118,7 +118,7 @@ Data row contains the linked cms category object (key "cmscategory").
 Data row contains the linked currency object only for currency_update (key "currency").
 
 ### Group
-- **Add customer to group**: add_customer_group
-- **Remove customer from group**: delete_customer_group
+- **Attach customer to group**: group_customer_attached
+- **Remove customer from group**: group_customer_removed
 
-Data row contains the linked custerom and customer groups objects (keys "customer" and "customer_groups").
+Data row contains the linked customer object (key "customer") and customer groups objects  (key "customer_groups").
