@@ -128,17 +128,25 @@ Data row contains the linked customer object (key "customer") and the linked cus
  - **update**: extract_updated
  - **delete**: extract_deleted
  
+Data row contains the linked extract object (key "extract").
+ 
 ### Widget Top Menu
  - **create**: topmenu_created
  - **update**: topmenu_updated
  - **delete**: topmenu_deleted
+
+Data row contains the linked top menu object (key "topmenu").
 
 ### Widget Footer Menu
  - **create**: footermenu_created
  - **update**: footermenu_updated
  - **delete**: footermenu_deleted
  
+Data row contains the linked footer menu object (key "footermenu").
+ 
  ### Widget Slider
  - **create**: slider_created
  - **update**: slider_updated
  - **delete**: slider_deleted
+
+Data row contains the linked slider object (key "slider").
