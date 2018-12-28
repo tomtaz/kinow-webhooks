@@ -62,7 +62,7 @@ Data row contains the linked order object (key "order") and the linked customer 
 - **update**: customer_updated
 - **delete**: customer_deleted
 
--Data row contains the linked customer object (key "customer").
+Data row contains the linked customer object (key "customer").
 
 ### Category
 
@@ -122,3 +122,23 @@ Data row contains the linked currency object only for currency_updated (key "cur
 - **remove customer**: group_customer_removed
 
 Data row contains the linked customer object (key "customer") and the linked customer groups objects (key "groups").
+
+### Extracts
+ - **create**: extract_created
+ - **update**: extract_updated
+ - **delete**: extract_deleted
+ 
+### Widget Top Menu
+ - **create**: topmenu_created
+ - **update**: topmenu_updated
+ - **delete**: topmenu_deleted
+
+### Widget Footer Menu
+ - **create**: footermenu_created
+ - **update**: footermenu_updated
+ - **delete**: footermenu_deleted
+ 
+ ### Widget Slider
+ - **create**: slider_created
+ - **update**: slider_updated
+ - **delete**: slider_deleted
