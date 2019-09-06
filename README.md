@@ -80,7 +80,6 @@ Data row contains the linked category object (key "category").
 
 Data row contains the linked supplier object (key "supplier").
 
-
 ### Director
 
 - **create**: director_created
@@ -116,6 +115,11 @@ Data row contains the linked cms category object (key "cmscategory").
 - **update all currencies**: currencies_updated
 
 Data row contains the linked currency object only for currency_updated (key "currency").
+
+### Language
+- **update**: language_updated
+
+Data row contains the linked currency object only for currency_updated (key "language").
 
 ### Group
 - **attach customer**: group_customer_attached
