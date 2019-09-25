@@ -154,3 +154,8 @@ Data row contains the linked footer menu object (key "footermenu").
  - **delete**: slider_deleted
 
 Data row contains the linked slider object (key "slider").
+
+ ### Stripe payment gateway
+ - **pending payment (requires action - SCA)**: stripe_pending
+
+Data row contains the linked Stripe Invoice object (key "invoice").
