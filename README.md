@@ -33,6 +33,12 @@ Implement webhook with Kinow Solution.
 
 Data row contains the linked product object (key "product").
 
+For **product_attached** event, we also provide the linked product object (key "product_attached").
+
+For **product_director** event, we also provide the linked director object (key "director").
+
+For **product_actor** event, we also provide the linked actor object (key "actor").
+
 ### Access
 
 - **update**: access_created
@@ -57,8 +63,11 @@ For **subscription_stopped** event, we also provide the linked access object (ke
 ### Order
 
 - **create**: order_created
+- **history updated**: order_history
 
 Data row contains the linked order object (key "order") and the linked customer object (key "customer").
+
+For **order_history** event, we also provide the linked history object (key "history").
 
 ### Customer
 
