@@ -26,6 +26,10 @@ Implement webhook with Kinow Solution.
 - **create**: product_created
 - **update**: product_updated
 - **delete**: product_deleted
+- **position updated**: product_position
+- **product attached**: product_attached
+- **director attached**: product_director
+- **actor attached**: product_actor
 
 Data row contains the linked product object (key "product").
 
