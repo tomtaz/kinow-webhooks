@@ -139,11 +139,6 @@ Data row contains the linked recharge object (key "recharge").
 
 Data row contains the linked rule object (key "rule").
 
- ### Stripe payment gateway
- - **pending payment (requires action - SCA)**: stripe_pending
-
-Data row contains the linked Stripe Invoice object (key "invoice").
-
 ### Product
 
 - **create**: product_created
