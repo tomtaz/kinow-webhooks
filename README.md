@@ -133,9 +133,9 @@ Data row contains the linked recharge object (key "recharge").
 
 ### Prepayment rule
 
-- **create**: prepayment_rule_deleted
-- **update**: prepayment_rule_created
-- **delete**: prepayment_rule_updated
+- **create**: prepayment_bonus_deleted
+- **update**: prepayment_bonus_created
+- **delete**: prepayment_bonus_updated
 
 Data row contains the linked rule object (key "rule").
 
