@@ -131,7 +131,7 @@ Data row contains the linked operation object (key "operation").
 
 Data row contains the linked recharge object (key "recharge").
 
-### Prepayment rule
+### Prepayment bonus
 
 - **create**: prepayment_bonus_deleted
 - **update**: prepayment_bonus_created
