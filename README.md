@@ -59,6 +59,11 @@ Data row contains the linked cms object (key "cmspage").
 
 Data row contains the linked cms category object (key "cmscategory").
 
+### Configuration
+- **update**: configuration_updated
+
+Data row contains the linked configuration name and its value.
+
 ### Currency
 - **update**: currency_updated
 - **update all currencies**: currencies_updated
