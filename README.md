@@ -88,6 +88,15 @@ Data row contains the linked director object (key "director").
 
 Data row contains the linked extract object (key "extract").
 
+### Features
+ - **create**: feature_created
+ - **update**: feature_updated
+ - **delete**: feature_deleted
+ 
+ - **position updated**: feature_position
+
+Data row contains the linked extract object (key "feature").
+
 ### Group
 - **attach customer**: group_customer_attached
 - **remove customer**: group_customer_removed
