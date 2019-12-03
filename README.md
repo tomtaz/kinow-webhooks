@@ -147,17 +147,17 @@ Data row contains the linked rule object (key "rule").
 
 - **position updated**: product_position
 
-- **product attached**: product_attached
-- **director attached**: product_director
-- **actor attached**: product_actor
+- **product attached/detached**: product_products_updated
+- **director attached/detached**: product_directors_updated
+- **actor attached/detached**: product_actors_updated
 
 Data row contains the linked product object (key "product").
 
-For **product_attached** event, we also provide the linked product object (key "product_attached").
+For **product_products_updated** event, we also provide the linked product object (key "product_linked") and the action (key "action").
 
-For **product_director** event, we also provide the linked director object (key "director").
+For **product_directors_updated** event, we also provide the linked director object (key "director") and the action (key "action").
 
-For **product_actor** event, we also provide the linked actor object (key "actor").
+For **product_actors_updated** event, we also provide the linked actor object (key "actor") and the action (key "action").
 
  ### Stripe payment gateway
  - **pending payment (requires action - SCA)**: stripe_pending
