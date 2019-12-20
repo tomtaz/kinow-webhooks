@@ -37,6 +37,20 @@ Data row contains the linked access object (key "access"), the linked product ob
 
 Data row contains the linked supplier object (key "supplier").
 
+### Blog Post
+- **create**: blogpost_created
+- **update**: blogpost_updated
+- **delete**: blogpost_deleted
+
+Data row contains the linked cms object (key "blogpost").
+
+### Blog Category
+- **create**: blogcategory_created
+- **update**: blogcategory_updated
+- **delete**: blogcategory_deleted
+
+Data row contains the linked cms category object (key "blogcategory").
+
 ### Category
 
 - **create**: category_created
