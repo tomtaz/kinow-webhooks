@@ -124,6 +124,11 @@ Data row contains the linked extract object (key "extract").
 
 Data row contains the linked extract object (key "feature").
 
+### Gift
+- **sent**: gift_sent
+
+Data row contains the linked gift object (key "gift").
+
 ### Group
 - **attach customer**: group_customer_attached
 - **remove customer**: group_customer_removed
