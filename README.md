@@ -92,6 +92,14 @@ Data row contains the linked currency object only for currency_updated (key "cur
 
 Data row contains the linked customer object (key "customer").
 
+### Device
+
+- **create**: device_created
+- **update**: device_updated
+- **delete**: device_deleted
+
+Data row contains the linked device object (key "device").
+
 ### Director
 
 - **create**: director_created
