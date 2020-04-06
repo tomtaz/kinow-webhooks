@@ -37,6 +37,12 @@ Data row contains the linked access object (key "access"), the linked product ob
 
 Data row contains the linked supplier object (key "supplier").
 
+### Automatic pages
+
+- **update**: automatic_pages_updated
+
+Data row contains the linked balance object (key "page").
+
 ### Blog Post
 - **create**: blogpost_created
 - **update**: blogpost_updated
@@ -151,32 +157,32 @@ For **order_history** event, we also provide the linked history object (key "his
 
 ### Prepayment balance
 
-- **create**: prepayment_balance_deleted
-- **update**: prepayment_balance_created
+- **create**: prepayment_balance_created
+- **update**: prepayment_balance_updated
 
 Data row contains the linked balance object (key "balance").
 
 ### Prepayment operation
 
-- **create**: prepayment_operation_deleted
-- **update**: prepayment_operation_created
-- **delete**: prepayment_operation_updated
+- **create**: prepayment_operation_created
+- **update**: prepayment_operation_updated
+- **delete**: prepayment_operation_deleted
 
 Data row contains the linked operation object (key "operation").
 
 ### Prepayment recharge
 
-- **create**: prepayment_recharge_deleted
-- **update**: prepayment_recharge_created
-- **delete**: prepayment_recharge_updated
+- **create**: prepayment_recharge_created
+- **update**: prepayment_recharge_updated
+- **delete**: prepayment_recharge_deleted
 
 Data row contains the linked recharge object (key "recharge").
 
 ### Prepayment bonus
 
-- **create**: prepayment_bonus_deleted
-- **update**: prepayment_bonus_created
-- **delete**: prepayment_bonus_updated
+- **create**: prepayment_bonus_created
+- **update**: prepayment_bonus_updated
+- **delete**: prepayment_bonus_deleted
 
 Data row contains the linked rule object (key "rule").
 
