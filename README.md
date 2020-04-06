@@ -233,6 +233,11 @@ For **subscription_stopped** event, we also provide the linked access object (ke
 
 Data row contains the linked video object (key "video").
 
+### Widget Google Analytics
+ - **update**: google_analytics_updated
+
+Data row contains the Google Analytics settings (keys "analytics_id", "analytics_universal" and "analytics_user_id").
+
 ### Widget Top Menu
  - **create**: topmenu_created
  - **update**: topmenu_updated
