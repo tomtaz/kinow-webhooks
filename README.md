@@ -39,7 +39,7 @@ Data row contains the linked supplier object (key "supplier").
 
 ### Automatic pages
 
-- **update**: automatic_pages_updated
+- **update**: automaticpages_updated
 
 Data row contains the linked balance object (key "page").
 
@@ -233,28 +233,34 @@ For **subscription_stopped** event, we also provide the linked access object (ke
 
 Data row contains the linked video object (key "video").
 
-### Widget Google Analytics
- - **update**: google_analytics_updated
-
-Data row contains the Google Analytics settings (keys "analytics_id", "analytics_universal" and "analytics_user_id").
-
-### Widget Top Menu
- - **create**: topmenu_created
- - **update**: topmenu_updated
- - **delete**: topmenu_deleted
-
-Data row contains the linked top menu object (key "topmenu").
-
 ### Widget Footer Menu
+
  - **create**: footermenu_created
  - **update**: footermenu_updated
  - **delete**: footermenu_deleted
 
 Data row contains the linked footer menu object (key "footermenu").
 
+### Widget Hook Phrase
+
+ - **create**: hookphrase_created
+ - **update**: hookphrase_updated
+ - **delete**: hookphrase_deleted
+
+Data row contains the linked hook phrase object (key "hookphrase").
+
  ### Widget Slider
+ 
  - **create**: slider_created
  - **update**: slider_updated
  - **delete**: slider_deleted
 
 Data row contains the linked slider object (key "slider").
+
+### Widget Top Menu
+
+ - **create**: topmenu_created
+ - **update**: topmenu_updated
+ - **delete**: topmenu_deleted
+
+Data row contains the linked top menu object (key "topmenu").
