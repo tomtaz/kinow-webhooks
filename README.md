@@ -155,6 +155,12 @@ Data row contains the linked order object (key "order") and the linked customer 
 
 For **order_history** event, we also provide the linked history object (key "history").
 
+### PasswordToken
+
+- **create**: password_token_created
+
+Data row contains the linked customer object (key "customer") and the generated token (key "token").
+
 ### Prepayment balance
 
 - **create**: prepayment_balance_created
