@@ -27,7 +27,7 @@ Implement webhook with Kinow Solution.
 - **update**: access_updated
 - **delete**: access_deleted
 
-Data row contains the linked access object (key "access"), the linked product object (key "product") and the linked customer object (key "customer").
+Data row contains the linked Access object (key "access"), the linked Product object (key "product") and the linked Customer object (key "customer").
 
 ### Actor
 
@@ -35,27 +35,27 @@ Data row contains the linked access object (key "access"), the linked product ob
 - **update**: actor_updated
 - **delete**: actor_deleted
 
-Data row contains the linked supplier object (key "supplier").
+Data row contains the linked Actor object (key "actor").
 
 ### Automatic pages
 
 - **update**: automaticpages_updated
 
-Data row contains the linked balance object (key "page").
+Data row contains the linked Automatic Page object (key "page").
 
 ### Blog Post
 - **create**: blogpost_created
 - **update**: blogpost_updated
 - **delete**: blogpost_deleted
 
-Data row contains the linked cms object (key "blogpost").
+Data row contains the linked Blog Post object (key "blogpost").
 
 ### Blog Category
 - **create**: blogcategory_created
 - **update**: blogcategory_updated
 - **delete**: blogcategory_deleted
 
-Data row contains the linked cms category object (key "blogcategory").
+Data row contains the linked Blog Category object (key "blogcategory").
 
 ### Category
 
@@ -63,32 +63,38 @@ Data row contains the linked cms category object (key "blogcategory").
 - **update**: category_updated
 - **delete**: category_deleted
 
-Data row contains the linked category object (key "category").
+- **position updated**: category_position
 
-### CMS
+Data row contains the linked Category object (key "category").
+
+### CMS Page
+
 - **create**: cmspage_created
 - **update**: cmspage_updated
 - **delete**: cmspage_deleted
 
-Data row contains the linked cms object (key "cmspage").
+Data row contains the linked CMS Page object (key "cmspage").
 
 ### CMS Category
+
 - **create**: cmscategory_created
 - **update**: cmscategory_updated
 - **delete**: cmscategory_deleted
 
-Data row contains the linked cms category object (key "cmscategory").
+Data row contains the linked CMS Category object (key "cmscategory").
 
 ### Configuration
+
 - **update**: configuration_updated
 
-Data row contains the linked configuration name and its value.
+Data row contains the linked Configuration name and its value.
 
 ### Currency
+
 - **update**: currency_updated
 - **update all currencies**: currencies_updated
 
-Data row contains the linked currency object only for currency_updated (key "currency").
+Data row contains the linked Currency object only for currency_updated (key "currency").
 
 ### Customer
 
@@ -96,7 +102,7 @@ Data row contains the linked currency object only for currency_updated (key "cur
 - **update**: customer_updated
 - **delete**: customer_deleted
 
-Data row contains the linked customer object (key "customer").
+Data row contains the linked Customer object (key "customer").
 
 ### Device
 
@@ -104,7 +110,7 @@ Data row contains the linked customer object (key "customer").
 - **update**: device_updated
 - **delete**: device_deleted
 
-Data row contains the linked device object (key "device").
+Data row contains the linked Device object (key "device").
 
 ### Director
 
@@ -112,85 +118,90 @@ Data row contains the linked device object (key "device").
 - **update**: director_updated
 - **delete**: director_deleted
 
-Data row contains the linked director object (key "director").
+Data row contains the linked Director object (key "director").
 
 ### Extracts
  - **create**: extract_created
  - **update**: extract_updated
  - **delete**: extract_deleted
+ 
+ - **position updated**: extract_position
 
-Data row contains the linked extract object (key "extract").
+Data row contains the linked Extract object (key "extract").
 
 ### Features
  - **create**: feature_created
  - **update**: feature_updated
  - **delete**: feature_deleted
- 
+
  - **position updated**: feature_position
 
-Data row contains the linked extract object (key "feature").
+Data row contains the linked Feature object (key "feature").
 
 ### Gift
+
 - **sent**: gift_sent
 
-Data row contains the linked gift object (key "gift").
+Data row contains the linked Gift object (key "gift").
 
 ### Group
+
 - **attach customer**: group_customer_attached
 - **remove customer**: group_customer_removed
 
-Data row contains the linked customer object (key "customer") and the linked customer groups objects (key "groups").
+Data row contains the linked Customer object (key "customer") and the linked Customer Groups objects (key "groups").
 
 ### Language
+
 - **update**: language_updated
 
-Data row contains the linked currency object only for currency_updated (key "language").
+Data row contains the linked Language object (key "language").
 
 ### Order
 
 - **create**: order_created
 - **history updated**: order_history
 
-Data row contains the linked order object (key "order") and the linked customer object (key "customer").
+Data row contains the linked Order object (key "order") and the linked Customer object (key "customer").
 
-For **order_history** event, we also provide the linked history object (key "history").
+For **order_history** event, we also provide the linked History object (key "history").
 
-### PasswordToken
+### Password Token
 
 - **create**: password_token_created
 
-Data row contains the linked customer object (key "customer") and the generated token (key "token").
+Data row contains the linked Customer object (key "customer") and the generated Token (key "token").
 
-### Prepayment balance
+### Prepayment Balance
 
 - **create**: prepayment_balance_created
 - **update**: prepayment_balance_updated
 
-Data row contains the linked balance object (key "balance").
+Data row contains the linked Prepayment Balance object (key "balance").
 
-### Prepayment operation
+### Prepayment Operation
 
 - **create**: prepayment_operation_created
 - **update**: prepayment_operation_updated
 - **delete**: prepayment_operation_deleted
 
-Data row contains the linked operation object (key "operation").
+Data row contains the linked Prepayment Operation object (key "operation").
 
-### Prepayment recharge
+### Prepayment Recharge
 
 - **create**: prepayment_recharge_created
 - **update**: prepayment_recharge_updated
 - **delete**: prepayment_recharge_deleted
 
-Data row contains the linked recharge object (key "recharge").
+Data row contains the linked Prepayment Recharge object (key "recharge").
 
-### Prepayment bonus
+### Prepayment Bonus
 
 - **create**: prepayment_bonus_created
 - **update**: prepayment_bonus_updated
 - **delete**: prepayment_bonus_deleted
 
-Data row contains the linked rule object (key "rule").
+Data row contains the linked Prepayment Bonus object (key "bonus").
 
 ### Product
 
@@ -204,20 +215,23 @@ Data row contains the linked rule object (key "rule").
 - **director attached/detached**: product_directors_updated
 - **actor attached/detached**: product_actors_updated
 
-Data row contains the linked product object (key "product").
+Data row contains the linked Product object (key "product").
 
-For **product_products_updated** event, we also provide the linked product object (key "product_linked") and the action (key "action").
+For **product_position** event, we also provide the linked Category object (key "category").
 
-For **product_directors_updated** event, we also provide the linked director object (key "director") and the action (key "action").
+For **product_products_updated** event, we also provide the linked Product object (key "product_linked") and the action (key "action").
 
-For **product_actors_updated** event, we also provide the linked actor object (key "actor") and the action (key "action").
+For **product_directors_updated** event, we also provide the linked Director object (key "director") and the action (key "action").
+
+For **product_actors_updated** event, we also provide the linked Actor object (key "actor") and the action (key "action").
 
  ### Stripe payment gateway
+
  - **pending payment (requires action - SCA)**: stripe_pending
 
 Data row contains the linked Stripe Invoice object (key "invoice").
 
-### Subscription access
+### Subscription Access
 
 - **create**: subscription_created
 - **renew**: subscription_renewed
@@ -225,11 +239,11 @@ Data row contains the linked Stripe Invoice object (key "invoice").
 
 - **renew failed**: subscription_error
 
-Data row contains the linked subscription object (key "subscription") and the linked customer object (key "customer").
+Data row contains the linked Subscription object (key "subscription") and the linked Customer object (key "customer").
 
-For **subscription_error** event, we also provide a key "payment_method" with the payment name.
+For **subscription_error** event, we also provide a key "payment_method" with the Payment name.
 
-For **subscription_stopped** event, we also provide the linked access object (key "access").
+For **subscription_stopped** event, we also provide the linked Access object (key "access").
 
 ### Video
 
@@ -237,7 +251,9 @@ For **subscription_stopped** event, we also provide the linked access object (ke
 - **update**: video_updated
 - **delete**: video_deleted
 
-Data row contains the linked video object (key "video").
+ - **position updated**: video_position
+
+Data row contains the linked Video object (key "video").
 
 ### Widget Footer Menu
 
@@ -245,7 +261,7 @@ Data row contains the linked video object (key "video").
  - **update**: footermenu_updated
  - **delete**: footermenu_deleted
 
-Data row contains the linked footer menu object (key "footermenu").
+Data row contains the linked Footer Menu object (key "footermenu").
 
 ### Widget Hook Phrase
 
@@ -253,15 +269,15 @@ Data row contains the linked footer menu object (key "footermenu").
  - **update**: hookphrase_updated
  - **delete**: hookphrase_deleted
 
-Data row contains the linked hook phrase object (key "hookphrase").
+Data row contains the linked Hook Phrase object (key "hookphrase").
 
  ### Widget Slider
- 
+
  - **create**: slider_created
  - **update**: slider_updated
  - **delete**: slider_deleted
 
-Data row contains the linked slider object (key "slider").
+Data row contains the linked Slider object (key "slider").
 
 ### Widget Top Menu
 
@@ -269,4 +285,4 @@ Data row contains the linked slider object (key "slider").
  - **update**: topmenu_updated
  - **delete**: topmenu_deleted
 
-Data row contains the linked top menu object (key "topmenu").
+Data row contains the linked Top Menu object (key "topmenu").
