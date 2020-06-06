@@ -260,6 +260,8 @@ Data row contains the linked Video object (key "video").
  - **create**: footermenu_created
  - **update**: footermenu_updated
  - **delete**: footermenu_deleted
+ 
+ - **position updated**: footermenu_position
 
 Data row contains the linked Footer Menu object (key "footermenu").
 
@@ -268,6 +270,8 @@ Data row contains the linked Footer Menu object (key "footermenu").
  - **create**: hookphrase_created
  - **update**: hookphrase_updated
  - **delete**: hookphrase_deleted
+ 
+ - **position updated**: hookphrase_position
 
 Data row contains the linked Hook Phrase object (key "hookphrase").
 
@@ -276,6 +280,8 @@ Data row contains the linked Hook Phrase object (key "hookphrase").
  - **create**: slider_created
  - **update**: slider_updated
  - **delete**: slider_deleted
+ 
+ - **position updated**: slider_position
 
 Data row contains the linked Slider object (key "slider").
 
@@ -284,5 +290,7 @@ Data row contains the linked Slider object (key "slider").
  - **create**: topmenu_created
  - **update**: topmenu_updated
  - **delete**: topmenu_deleted
+ 
+ - **position updated**: topmenu_position
 
 Data row contains the linked Top Menu object (key "topmenu").
