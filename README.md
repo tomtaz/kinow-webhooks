@@ -214,6 +214,7 @@ Data row contains the linked Prepayment Bonus object (key "bonus").
 - **product attached/detached**: product_products_updated
 - **director attached/detached**: product_directors_updated
 - **actor attached/detached**: product_actors_updated
+- **category association**: product_categories_updated
 
 Data row contains the linked Product object (key "product").
 
@@ -224,6 +225,8 @@ For **product_products_updated** event, we also provide the linked Product objec
 For **product_directors_updated** event, we also provide the linked Director object (key "director") and the action (key "action").
 
 For **product_actors_updated** event, we also provide the linked Actor object (key "actor") and the action (key "action").
+
+For **product_categories_updated** event, we also provide an array with Category IDS in which Product has ben added.
 
  ### Stripe payment gateway
 
